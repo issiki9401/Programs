@@ -1,34 +1,32 @@
-# -*- coding: utf-8 -*-
+register = [0]*16
+memory = [0 for i in range(254)]
 
-#建立暫存器和記憶體
-register=[0]*16
-memory=[0 for i in range(254)]
-#為何要有不同寫法?
-
-#loading programs讀取程式到記憶體
-n=int(input())
+n = int(input())
 for i in range(n):
-    memory[i]=int(input(),base=16)    
-ir=0 #initialization初始化
-pc=0
+    memory[i] = int(input(), base=16)
+# 假設 memory[254] 是 input(1) 進來
+memory[254] = int(input())
+
+ir = 0
+pc = 0
 
 while True:
-    ir=memory[pc] #fetch instruction讀取指令
-    opcode=(ir>>12) & 0xf  #decode the instruction by getting all fileds透過取得所有欄位來解碼指令
-    d2=(ir>>8) & 0xf#新定義
-    d3=(ir>>4) & 0xf
-    d4=ir&0xf
-    Ms=ir&0xff
-    Md=(ir>>4) & 0xff#這些定義是什麼?
-    if opcode==0:    #execute the instruction執行指令
+    ir = memory[pc]
+    opcode = (ir >> 12) & 0xf
+    d2 = (ir >> 8) & 0xf
+    d3 = (ir >> 4) & 0xf
+    d4 = ir & 0xf
+    Ms = ir & 0xff
+    Md = (ir >> 4) & 0xff
+    if opcode == 0:
         break
-    elif opcode == 1:  # LOAD
+    elif opcode == 1:
         register[d2] = memory[Ms]
-    elif opcode == 2:  # STORE
-        memory[Md] = register[d2]
-    elif opcode == 3:  # ADDI
+    elif opcode == 2:
+        memory[Md] = register[d2]    # 修正這一行，其餘不變
+    elif opcode == 3:
         register[d2] = register[d3] + register[d4]
-    elif opcode == 4:  # ADDF
+    elif opcode == 4:
         register[d2] = register[d3] + register[d4]
     elif opcode == 5:
         register[d2] = register[d3]
@@ -56,3 +54,6 @@ while True:
             continue
     else:
         break
+    pc += 1
+
+print(register[1])
