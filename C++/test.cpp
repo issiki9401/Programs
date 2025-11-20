@@ -1,5 +1,6 @@
 #include <stdio.h>
+
 int main(){
-    printf("Hello, World!\n");
-    return 0;
-}
+    unsigned int score;
+    scanf("%u", &score);
+    if (score <= 60){

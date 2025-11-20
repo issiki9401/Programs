@@ -1,23 +1,19 @@
-import sys
 def f(n, m):
-    def F(m):
-        if m == 0:
-            return 1
-        elif m == 1:
-            return 1
-        elif m == 2:
-            return 2
-        elif m == 3:
-            return 4
-        else:
-            return 2*F(m-1) - F(m-3)
-    return n * F(m)
+    # Base cases
+    if m == 1:
+        return n
+    elif m == 2:
+        return 2 * n
+    elif m == 3:
+        return 4 * n
+    else:
+        return f(n, m-1) + f(n, m-2) + f(n, m-3)
 
-while True:
-    try:
-        n, m = map(int, input().split())
-        if (m<1)|(n<1) :
-            sys.exit()
-        print(f(n, m))
-    except EOFError:
-        break
+import sys
+
+for line in sys.stdin:
+    line = line.strip()
+    if not line:
+        continue
+    n, m = map(int, line.split())
+    print(f(n, m))
