@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int m;
+    printf("請輸入一個整數m:\n");
+    scanf("%d",&m);
+
+    int root = (int)sqrt(m);
+
+    if(root*root == m){
+        printf("m是完全平方數\n");
+    }
+    else{
+        printf("m不是完全平方數\n");
+    }
+    
+    return 0;
+}
