@@ -9,5 +9,5 @@ int main(){
         m/=10;
     }
 
-    printf("%d\n",total);
+    printf("%d\n", total);
 }

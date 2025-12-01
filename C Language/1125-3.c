@@ -9,7 +9,7 @@ int main(){
         n/=10;
     }
 
-    printf("%d\n",digits);
+    printf("%d\n", digits);
 
     return 0;
 }

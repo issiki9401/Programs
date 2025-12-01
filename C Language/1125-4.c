@@ -1,15 +1,20 @@
 #include <stdio.h>
 
 int main(){
-    int m, n, quotient = 0;
-    scanf("%d %d",&m,&n);
+    int m, n, temp;
+    scanf("%d %d", &m, &n);
+    temp=m;
 
-    while(m>=n){
-        m-=n;
-        quotient++;
+    if(n==0){
+        temp=0;
+    }
+    else{
+        for(int i=1; i<n; i++){
+            temp+=m;
+        }
     }
 
-    printf("%d\n",quotient);
+    printf("%d\n", temp);
 
     return 0;
 }
