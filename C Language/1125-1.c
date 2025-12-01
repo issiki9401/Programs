@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(){
     int number, temp, count, digits = 0;
     scanf("%d",&number);
 
-    temp=abs(number);
+    temp=number;
 
     while(temp!=0){
         temp/=10;
