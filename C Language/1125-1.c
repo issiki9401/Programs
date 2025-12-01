@@ -7,20 +7,15 @@ int main(){
 
     temp=abs(number);
 
-    if(number==0){
-        count=1;
+    while(temp!=0){
+        temp/=10;
+        digits++;
     }
-    else{
-        while(temp!=0){
-            temp/=10;
-            digits++;
+    for(int i=1; i<=digits; i++){
+        if(number%2==0){
+            count++;
         }
-        for(int i=1; i<=digits; i++){
-            if(number%2==0){
-                count++;
-            }
-            number/=10;
-            }
+        number/=10;
     }
 
     printf("%d\n",count);
