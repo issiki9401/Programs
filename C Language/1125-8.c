@@ -5,7 +5,7 @@ int main(){
     printf("請輸入兩個整數m和n:\n");
     scanf("%d %d",&m,&n);
 
-    int i, count=0, x;
+    int count=0, x;
 
     if(m<n){
         x=n;

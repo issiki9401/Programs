@@ -5,7 +5,6 @@ int main(){
     printf("請輸入一個大於1的整數m:\n");
     scanf("%d",&m);
 
-    int i;
     int count=0;
 
     for(int i=1; i<=m; i++){
