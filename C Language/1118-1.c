@@ -6,11 +6,10 @@ int compare(int m1, int m2) {
 }
 
 int main() {
-    int a = 0, b = 0;
-    printf("請輸入兩個整數：");
+    int a, b;
     scanf("%d %d", &a, &b);
     
     int res = compare(a, b);
-    printf("比較結果：%d\n", res);
+    printf("%d\n", res);
     return 0;
 }
