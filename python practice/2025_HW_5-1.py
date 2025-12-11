@@ -1,66 +1,50 @@
+python
+precedence = {'+': 1, '-': 1, '*': 2, '/': 2}
 import sys
 
-def solve():
-    priority = {'+': 1, '-': 1, '*': 2, '/': 2}
-    
-    for line in sys.stdin:
-        s = line.strip()
-        if not s: continue
-        
-        if not set(s).issubset(set("0123456789+-*/() \t")):
-            print("error!")
-            continue
-
-        temp = s
-        for char in "+-*/()":
-            temp = temp.replace(char, f" {char} ")
-        tokens = temp.split()
-        
-        stack = []
-        output = []
-        error = False
-        
-        for t in tokens:
-            if t.isdigit():
-                output.append(t)
-            elif t == '(':
-                stack.append(t)
-            elif t == ')':
-                while stack and stack[-1] != '(':
-                    output.append(stack.pop())
-                if not stack:
-                    error = True
-                    break
-                stack.pop()
-            elif t in priority:
-                while stack and stack[-1] != '(' and priority.get(stack[-1], 0) >= priority[t]:
-                    output.append(stack.pop())
-                stack.append(t)
-        
-        while stack:
-            if stack[-1] == '(':
+for line in sys.stdin:
+    line = line.strip()
+    if not line:
+        print("error!")
+        continue
+    tokens = line.split()
+    output = []
+    stack = []
+    error = False
+    for token in tokens:
+        if token.isdigit():
+            output.append(token)
+        elif token == '(':
+            stack.append(token)
+        elif token == ')':
+            while stack and stack[-1] != '(':
+                output.append(stack.pop())
+            if not stack:
                 error = True
                 break
-            output.append(stack.pop())
-            
-        if error:
-            print("error!")
-            continue
-
-        counter = 0
+            stack.pop()
+        elif token in precedence:
+            while stack and stack[-1] != '(' and precedence[stack[-1]] >= precedence[token]:
+                output.append(stack.pop())
+            stack.append(token)
+        else:
+            error = True
+            break
+    if not error:
+        while stack:
+            top = stack.pop()
+            if top == '(':
+                error = True
+                break
+            output.append(top)
+    if not error:
+        operands = 0
+        operators = 0
         for item in output:
             if item.isdigit():
-                counter += 1
-            else:
-                if counter < 2:
-                    error = True
-                    break
-                counter -= 1
-        
-        if error or counter != 1:
-            print("error!")
-        else:
-            print("".join(output))
-
-if __name__ == "__main__":
-    solve()
+                operands += 1
+            elif item in precedence:
+                operators += 1
+        if operands != operators + 1 or operands == 0:
+            error = True
+    print(' '.join(output) if not error else 'error!')
