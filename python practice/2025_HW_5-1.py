@@ -1,75 +1,66 @@
 import sys
-import re
 
-def get_precedence(op):
-    if op in ('*', '/'):
-        return 2
-    elif op in ('+', '-'):
-        return 1
-    return 0
-
-def infix_to_rpn(expression):
-    if re.search(r'[^\d+\-*/() \t]', expression):
-        return "error!"
-
-    tokens = re.findall(r'\d+|[+\-*/()]', expression)
+def solve():
+    priority = {'+': 1, '-': 1, '*': 2, '/': 2}
     
-    if not tokens:
-        return "error!"
-
-    stack = []
-    output = []
-    
-    for token in tokens:
-        if token.isdigit():
-            output.append(token)
-        elif token == '(':
-            stack.append(token)
-        elif token == ')':
-            found_left = False
-            while stack:
-                top = stack.pop()
-                if top == '(':
-                    found_left = True
-                    break
-                output.append(top)
-            if not found_left:
-                return "error!"
-        elif token in ('+', '-', '*', '/'):
-            while stack and stack[-1] != '(' and \
-                  get_precedence(stack[-1]) >= get_precedence(token):
-                output.append(stack.pop())
-            stack.append(token)
-
-    while stack:
-        top = stack.pop()
-        if top == '(':
-            return "error!"
-        output.append(top)
-
-    val_stack_depth = 0
-    for token in output:
-        if token.isdigit():
-            val_stack_depth += 1
-        else:
-            if val_stack_depth < 2:
-                return "error!"
-            val_stack_depth -= 1
-            
-    if val_stack_depth != 1:
-        return "error!"
-
-    return "".join(output)
-
-def main():
-    lines = sys.stdin.read().splitlines()
-    
-    for line in lines:
-        line = line.strip()
-        if not line:
+    for line in sys.stdin:
+        s = line.strip()
+        if not s: continue
+        
+        if not set(s).issubset(set("0123456789+-*/() \t")):
+            print("error!")
             continue
-        result = infix_to_rpn(line)
-        print(result)
+
+        temp = s
+        for char in "+-*/()":
+            temp = temp.replace(char, f" {char} ")
+        tokens = temp.split()
+        
+        stack = []
+        output = []
+        error = False
+        
+        for t in tokens:
+            if t.isdigit():
+                output.append(t)
+            elif t == '(':
+                stack.append(t)
+            elif t == ')':
+                while stack and stack[-1] != '(':
+                    output.append(stack.pop())
+                if not stack:
+                    error = True
+                    break
+                stack.pop()
+            elif t in priority:
+                while stack and stack[-1] != '(' and priority.get(stack[-1], 0) >= priority[t]:
+                    output.append(stack.pop())
+                stack.append(t)
+        
+        while stack:
+            if stack[-1] == '(':
+                error = True
+                break
+            output.append(stack.pop())
+            
+        if error:
+            print("error!")
+            continue
+
+        counter = 0
+        for item in output:
+            if item.isdigit():
+                counter += 1
+            else:
+                if counter < 2:
+                    error = True
+                    break
+                counter -= 1
+        
+        if error or counter != 1:
+            print("error!")
+        else:
+            print("".join(output))
 
 if __name__ == "__main__":
-    main()
+    solve()
