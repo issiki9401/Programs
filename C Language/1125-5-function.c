@@ -2,18 +2,18 @@
 
 int a(int, int);
 
-int a(int a, int b){
+int a(int m, int n){
     int quotient = 0;
 
     while(m>=n){
         m-=n;
         quotient++;
-
+    }
     return quotient;
 }
 
 int main(){
-    int m, n = 0;
+    int m, n, ans = 0;
     scanf("%d %d",&m,&n);
 					
     ans = a(m, n);

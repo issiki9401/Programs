@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void calculate(int);
+int calculate(int);
 
-void calculate(int m) {
+int calculate(int m) {
     int count=0;
     while(m!=0){
         m/=10;
@@ -10,14 +10,14 @@ void calculate(int m) {
             count++;
         }
     }
-    printf("%d", count);
+    return count;
 }
 
 int main() {
-    int m;
+    int m, ans;
     scanf("%d", &m);
     
-    calculate(m);
-    printf("\n");
+    ans = calculate(m);
+    printf("%d\n", ans);
     return 0;
 }

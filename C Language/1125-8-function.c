@@ -30,7 +30,7 @@ int a(int m, int n){
 }
 
 int main(){
-    int m,n;
+    int m, n, ans;
     printf("請輸入兩個整數m和n:\n");
     scanf("%d %d",&m,&n);
 

@@ -10,10 +10,10 @@ int a(int m, int n){
 }
 
 int main(){
-    int m, n = 0;
+    int m, n, ans = 0;
     scanf("%d %d",&m,&n);
 
-    ans = a(m, n)；
+    ans = a(m, n);
 
     printf("%d\n", ans);
 

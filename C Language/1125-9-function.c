@@ -15,7 +15,7 @@ int a(int m){
 }
 
 int main(){
-    int m;
+    int m, ans;
     printf("請輸入一個整數m:\n");
     scanf("%d",&m);
 
