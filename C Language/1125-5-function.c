@@ -2,8 +2,7 @@
 
 int a(int, int);
 
-int a(int a, int b)
-{
+int a(int a, int b){
     int quotient = 0;
 
     while(m>=n){
