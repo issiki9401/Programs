@@ -6,7 +6,7 @@ int a(int m, int n){
     while(m>=n){
         m-=n;
     }
-    return ans;
+    return m;
 }
 
 int main(){
