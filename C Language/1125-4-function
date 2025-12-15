@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int a(int);
+
+int a(int m, int n){
+    temp = m;
+    if(n==0){
+        temp=0;
+    }
+    else{
+        for(int i=1; i<n; i++){
+            temp+=m;
+        }
+    }
+    return temp;
+}
+
+int main(){
+    int m, n;
+    scanf("%d %d", &m, &n);
+
+    ans = a(m, n);
+
+    printf("%d\n", ans);
+
+    return 0;
+}
