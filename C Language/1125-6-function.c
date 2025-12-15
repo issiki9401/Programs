@@ -2,8 +2,7 @@
 
 int a(int);
 
-int a(int m, int n)
-{
+int a(int m, int n){
     while(m>=n){
         m-=n;
     }
