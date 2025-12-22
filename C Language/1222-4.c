@@ -3,19 +3,17 @@
 int a(int, int);
 
 int a(int m, int n){
-    while(m>=n){
-        m-=n;
+    if(m<n){
+        return m;
     }
-    return m;
+    return a(m-n, n);
 }
 
 int main(){
-    int m, n, ans = 0;
+    int m, n;
     scanf("%d %d",&m,&n);
 
-    ans = a(m, n);
-
-    printf("%d\n", ans);
+    printf("%d\n", a(m, n));
 
     return 0;
 }

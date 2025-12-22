@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int a(int m, int n);
+int a(int, int);
 
 int a(int m, int n){
     int temp;

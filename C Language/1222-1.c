@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int calculate(int m, int *times);
+int calculate(int, int*);
 
 int calculate(int m, int *times){
     if (m == 0) {
