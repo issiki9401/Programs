@@ -1,49 +1,27 @@
 #include <stdio.h>
 
-int a(int, int);
+int a(int, int, int, int);
 
-int a(int m, int n){
-    int count=0, x;
-
-    if(m<n){
-        x=n;
+int a(int m, int n, int i, int x){
+    if(m%i==0 && n%i==0){
+        x++;
     }
-    else{
-        x=m;
+    if(i==m || i==n){
+        return x;
     }
 
-    for(int i=1; i<=x; i++){
-        if(m%i==0 && n%i==0){
-        count++;
-        }
-    }
-
-    if(m==1 || n==1){
-        return 0;
-    }
-    else if(count==1){
-        return 1;
-    }
-    else{
-        return 2;
-    }
+    return a(m, n, i+1, x);
 }
 
 int main(){
-    int m, n, ans;
-    printf("請輸入兩個整數m和n:\n");
+    int m, n, i=1, x=0;
     scanf("%d %d",&m,&n);
 
-    ans = a(m, n);
-
-    if(ans==0){
-        printf("m或n不能為1\n");
-    }
-    else if(ans==1){
-        printf("m和n互質\n");
+    if(a(m, n, i, x)==1){
+        printf("Yes\n");
     }
     else{
-        printf("m和n不互質\n");
+        printf("No\n");
     }
 
     return 0;
