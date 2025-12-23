@@ -11,7 +11,7 @@ int a(int m, int i){
 }
 
 int main(){
-    int m, i=1;
+    int m, i=0;
     scanf("%d",&m);
 
 if(a(m, i)==2)
