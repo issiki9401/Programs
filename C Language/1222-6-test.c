@@ -14,10 +14,10 @@ int main(){
     int m, i=0;
     scanf("%d",&m);
 
-if(a(m, i)==2)
-    printf("yes\n");
-else
-    printf("no\n");
+    if(a(m, i)==2)
+        printf("yes\n");
+    else
+        printf("no\n");
     
     return 0;
 }
