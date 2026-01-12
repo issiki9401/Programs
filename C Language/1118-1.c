@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int compare(int m1, int m2) {
-    if (m1 == m2) return 0;
-    return m1 > m2 ? 1 : -1;
+int compare(int, int);
+
+int compare(int m1, int m2){
+    return (m1 == m2) ? 0 : (m1 > m2) ? 1 : -1;
 }
 
-int main() {
-    int a, b;
-    scanf("%d %d", &a, &b);
-    
-    int res = compare(a, b);
-    printf("%d\n", res);
+int main(){
+    int m1, m2;
+    scanf("%d %d", &m1, &m2);
+
+    printf("%d\n", compare(m1, m2));
     return 0;
 }
