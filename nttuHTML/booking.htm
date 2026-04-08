@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>航班預訂系統</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .booking-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box; /* 確保寬度包含 padding */
+            font-size: 1rem;
+        }
+        input:focus {
+            outline: none;
+            border-color: #0056b3;
+            box-shadow: 0 0 5px rgba(0,86,179,0.3);
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+        .info {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="booking-card">
+    <h2>✈️ 搜尋航班</h2>
+    
+    <form id="bookingForm">
+        <div class="form-group">
+            <label for="destination">目的地</label>
+            <input type="text" id="destination" placeholder="例如：東京, 巴黎..." required>
+        </div>
+
+        <div class="form-group">
+            <label for="travelDate">出發日期</label>
+            <input type="date" id="travelDate" required>
+            <p class="info">* 僅限預訂未來三個月內的航班</p>
+        </div>
+
+        <button type="submit">立即搜尋</button>
+    </form>
+</div>
+
+<script>
+    // 設定日期限制的邏輯
+    const dateInput = document.getElementById('travelDate');
+    const today = new Date();
+    
+    // 格式化日期為 YYYY-MM-DD
+    function formatDate(date) {
+        let d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+
+        return [year, month, day].join('-');
+    }
+
+    // 設定最小值（今天）
+    dateInput.min = formatDate(today);
+
+    // 設定最大值（三個月後）
+    const maxDate = new Date();
+    maxDate.setMonth(today.getMonth() + 12);
+    dateInput.max = formatDate(maxDate);
+
+    // 表單提交測試
+    document.getElementById('bookingForm').onsubmit = function(e) {
+        e.preventDefault();
+        const dest = document.getElementById('destination').value;
+        const date = document.getElementById('travelDate').value;
+        alert(`正在搜尋前往 ${dest} 的航班，日期：${date}`);
+    };
+</script>
+
+</body>
+</html>

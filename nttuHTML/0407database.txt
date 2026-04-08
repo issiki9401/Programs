@@ -1,0 +1,14 @@
+資料庫網址
+webdb.nttu.edu.tw/phpmyadmin
+d50
+
+SELECT * FROM test
+INSERT INTO test (tid, test) VALUES (NULL, '4月7日練習3');
+INSERT INTO test (tid, test) VALUES (NULL, '4月7日練習1'), (NULL, '4月7日練習2');
+ALTER TABLE test CHANGE test test VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL;
+
+UPDATE test SET test = '4月7日練習2:00' WHERE test.tid = 2;
+
+UPDATE test SET test = '4月7日練習3:00';
+
+DELETE FROM test WHERE test.tid = 2
