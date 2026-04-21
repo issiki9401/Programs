@@ -5,7 +5,7 @@ include_once("01_conn.php");
 
 try{
     $sql = "update visitor set counter=counter+1 where vid=1";
-	echo $sql."<br>\n";
+	//echo $sql."<br>\n";
 	$msg='';
 
 	$result =$connect->exec($sql);
