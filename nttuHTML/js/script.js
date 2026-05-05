@@ -96,8 +96,8 @@ let isBgPlaying = true, isBgMuted = true, isMusicPlaying = false;
 let currentTrack = 0, progressInterval;
 
 const playlist = [
-    { id: '_Yn2aIz9SjQ', title: 'Bling-Bang-Bang-Born' },
-    { id: 'wbAvpVEDFpc', title: '偶像 (Idol) - YOASOBI' },
+    { id: '_Yn2aIz9SjQ', title: '夜航星 (Night Voyager)' },
+    { id: 'wbAvpVEDFpc', title: '仙《仙王的日常生活》动画主题曲' },
     { id: 'mWxP-sQmNMU', title: 'Running For Your Life - Wuthering Waves' },
     { id: 'Xow5OrwWZnw', title: 'FURYON - San-Z' },
     { id: 'cXYpM_nU8Ls', title: '太空电梯 - 阿鲲' }
