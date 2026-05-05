@@ -1,29 +1,20 @@
-#include <stdio.h>
-#include <string.h>
-
-char* findlastCity(char *cities[], int size){
-    if(size <= 0){
-        return NULL; 
-    }
-    char *lastCity = cities[0];
-    for(int i = 1; i < size; i++){
-        if(strcmp(cities[i], lastCity) > 0){
-            lastCity = cities[i];
-        }
-    }
-    return lastCity;
-}
-
-int main(){
-    char *cities[ ] = {"London", "New York", "Tokyo", "Paris", "Taipei"};
-    int size = sizeof(cities) / sizeof(cities[0]);
-    char *result = findlastCity(cities, size);
-    if(result != NULL){
-        printf(result);
-    }
-    else{
-        printf("Can't find the city\n");
-    }
-
-    return 0;
+int main() {
+  int m=3, n=5;
+  int a[5]={-4,-3,-2,-1};
+  
+  int*p=&m;
+  int*q=&n;
+  *p=7;
+  
+  int**pp=&p;
+  int**pq=&q;
+  p=q;
+  **pp=1;
+  
+  p=a;
+  q=a+2;
+  *(p+2)=*(q+2);
+  *q=*p**p;
+  
+  return 0;
 }
