@@ -78,7 +78,8 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		      點餐	  </a>
+		      會員	  
+		  </a>
 		  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="db_member/mbrReg.php">註冊</a></li>
 			<li><a class="dropdown-item" href="db_member/mbrQry.php">查詢</a></li>
@@ -88,7 +89,7 @@
         </li>
 		<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		      會員
+		      點餐
 		  </a>
 		  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="db_meal/mQry.php">查詢</a></li>
