@@ -16,5 +16,5 @@ int main() {
   *(p+2)=*(q+2);
   *q=*p**p;
   
-  return 0;
+  return 0
 }
