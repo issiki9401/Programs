@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon May 11 18:14:38 2026
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : LED_Flash
+Top-level Entity Name : LED_Flash
+Family : Cyclone IV E
+Total logic elements : 50
+    Total combinational functions : 50
+    Dedicated logic registers : 29
+Total registers : 29
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

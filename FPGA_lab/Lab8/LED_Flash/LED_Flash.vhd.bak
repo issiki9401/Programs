@@ -1,0 +1,51 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity LED_Flash is
+    Port ( clk : in  STD_LOGIC;
+           rst : in  STD_LOGIC;
+           sw  : in  STD_LOGIC;
+           led : out STD_LOGIC_VECTOR (1 downto 0));
+end LED_Flash;
+
+architecture Behavioral of LED_Flash is
+    type state_type is (S0, S1); -- 定義兩個狀態
+    signal current_state, next_state : state_type;
+begin
+
+    -- 狀態暫存器 (State Register)
+    process(clk, rst)
+    begin
+        if rst = '1' then
+            current_state <= S0;
+        elsif rising_edge(clk) then
+            current_state <= next_state;
+        end if;
+    end process;
+
+    -- 狀態轉移邏輯 (Next State Logic)
+    process(current_state)
+    begin
+        case current_state is
+            when S0 => next_state <= S1;
+            when S1 => next_state <= S0;
+        end case;
+    end process;
+
+    -- 輸出邏輯 (Output Logic)
+    process(current_state, sw)
+    begin
+        if sw = '0' then -- 交叉閃爍
+            case current_state is
+                when S0 => led <= "10";
+                when S1 => led <= "01";
+            end case;
+        else -- sw = '1', 同步閃爍
+            case current_state is
+                when S0 => led <= "11";
+                when S1 => led <= "00";
+            end case;
+        end if;
+    end process;
+
+end Behavioral;

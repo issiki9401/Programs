@@ -1,0 +1,46 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity lab7_1 is
+    Port ( clk   : in  std_logic;    -- FPGA 時脈 ( 50 MHz) 
+           rst   : in  std_logic;
+           X     : in  std_logic;
+           Q     : out std_logic_vector(1 downto 0));
+end lab7_1;
+
+architecture arch of lab7_1 is
+    signal clk_sig : std_logic;
+    signal A       : std_logic := '0'; -- := assign the initial value 
+    signal B       : std_logic := '0';
+    signal Anext   : std_logic;
+    signal Bnext   : std_logic;
+    
+    -- declaration for the component 
+    component D_FF is
+        port ( D     : in  std_logic;
+               clock : in  std_logic;
+               reset : in  std_logic;
+               Q     : out std_logic);
+    end component;
+
+    component OSC is
+        port ( clk_in  : in  std_logic;
+               clk_out : out std_logic);
+    end component;
+
+begin
+
+    -- Outputs 
+    Q(1) <= A;
+    Q(0) <= B;
+
+    -- Next State 
+    Anext <= A xor B xor X;
+    Bnext <= not B;
+
+    -- Wiring to the DFF 
+    U0: OSC port map (clk, clk_sig);
+    U1: D_FF port map (Anext, clk_sig, rst, A);
+    U2: D_FF port map (Bnext, clk_sig, rst, B);
+
+end arch;

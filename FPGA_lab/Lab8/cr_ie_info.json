@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "Access Violation at 0X00007FF948F33494",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ff948f33493: gdiplus + 0xf3493 (GdipDeletePrivateFontCollection + 0x83)\n\t0x7ff8b5fb8ed2: AsusIME + 0xd8ed2 (DllUnregisterServer + 0x99bd2)\n\t0x7ff8b5f9e131: AsusIME + 0xbe131 (DllUnregisterServer + 0x7ee31)\n\t0x7ff8b5f9dee0: AsusIME + 0xbdee0 (DllUnregisterServer + 0x7ebe0)\n\t0x7ff8b5f9e20c: AsusIME + 0xbe20c (DllUnregisterServer + 0x7ef0c)\n\t0x7ff8b5f9d411: AsusIME + 0xbd411 (DllUnregisterServer + 0x7e111)\n\t0x7ff8b5f9d390: AsusIME + 0xbd390 (DllUnregisterServer + 0x7e090)\n\t0x7ff8b5f9d50e: AsusIME + 0xbd50e (DllUnregisterServer + 0x7e20e)\n\t0x7ff8b5f7f6d2: AsusIME + 0x9f6d2 (DllUnregisterServer + 0x603d2)\n\t0x7ff8b5f7fe8c: AsusIME + 0x9fe8c (DllUnregisterServer + 0x60b8c)\n\t0x7ff8b5f7ffac: AsusIME + 0x9ffac (DllUnregisterServer + 0x60cac)\n\t0x7ff9743df989: ntdll + 0x15f989 (RtlEncodeRemotePointer + 0x89)\n\t0x7ff974292d22: ntdll + 0x12d22 (RtlAllocateHeap + 0x1ac2)\n\t0x7ff974282cee: ntdll + 0x2cee (LdrShutdownProcess + 0x17e)\n\t0x7ff9742843bd: ntdll + 0x43bd (RtlExitUserProcess + 0x9d)\n\t0x7ff972f817fa: KERNEL32 + 0x417fa (ExitProcess + 0xa)\n\t0x7ff93e2929a6: MSVCR120 + 0x229a6 (_initterm_e + 0x21a)\n\t0x7ff7ac8f1e6f: quartus + 0x1e6f (__tmainCRTStartup + 0x15f)\n\t0x7ff972f6e956: KERNEL32 + 0x2e956 (BaseThreadInitThunk + 0x16)\n\t0x7ff97428427b: ntdll + 0x427b (RtlUserThreadStart + 0x2b)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "18.1.0",
+		"build" : "625",
+		"edition" : "Lite Edition"
+	}
+}

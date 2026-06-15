@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/1/Documents/Lab/try0323/try0323.vhd
+source_file = 1, C:/Users/1/Documents/Lab/try0323/Waveform_try0323.vwf
+source_file = 1, C:/Users/1/Documents/Lab/try0323/Waveform.vwf
+source_file = 1, d:/softwares/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/softwares/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/softwares/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/softwares/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/1/Documents/Lab/try0323/db/try0323.cbx.xml
+design_name = hard_block
+design_name = try0323
+instance = comp, \F~output\, F~output, try0323, 1
+instance = comp, \D~input\, D~input, try0323, 1
+instance = comp, \A~input\, A~input, try0323, 1
+instance = comp, \B~input\, B~input, try0323, 1
+instance = comp, \C~input\, C~input, try0323, 1
+instance = comp, \F~0\, F~0, try0323, 1

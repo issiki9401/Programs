@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity lab4 is
+	port( A: in std_logic;
+			B: in std_logic;
+			C: in std_logic;
+			D: in std_logic;
+			F: out std_logic);
+end entity;
+
+architecture arch of lab4 is
+
+signal x1: std_logic;
+signal x2: std_logic;
+signal x3: std_logic;
+signal x4: std_logic;
+
+begin
+
+	x1 <= (not A) and D;
+	x2 <= A nor C;
+	x3 <= not ((not B) and D and (not C));
+	x4 <= x2 nor x3;
+
+end architecture;

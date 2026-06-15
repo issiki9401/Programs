@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon May 11 18:14:44 2026
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : LED_Flash
+Top-level Entity Name : LED_Flash
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 51 / 22,320 ( < 1 % )
+    Total combinational functions : 50 / 22,320 ( < 1 % )
+    Dedicated logic registers : 29 / 22,320 ( < 1 % )
+Total registers : 29
+Total pins : 5 / 154 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

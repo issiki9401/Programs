@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Sout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Overflow",
+					"strict" : false
+				},
+				{
+					"name" : "Neg",
+					"strict" : false
+				},
+				{
+					"name" : "a1",
+					"strict" : false
+				},
+				{
+					"name" : "b1",
+					"strict" : false
+				},
+				{
+					"name" : "c1",
+					"strict" : false
+				},
+				{
+					"name" : "d1",
+					"strict" : false
+				},
+				{
+					"name" : "e1",
+					"strict" : false
+				},
+				{
+					"name" : "f1",
+					"strict" : false
+				},
+				{
+					"name" : "g1",
+					"strict" : false
+				},
+				{
+					"name" : "Ain[0]",
+					"strict" : false
+				},
+				{
+					"name" : "F[1]",
+					"strict" : false
+				},
+				{
+					"name" : "F[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Bin[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Ain[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Bin[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Ain[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Bin[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ain[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Bin[1]",
+					"strict" : false
+				},
+				{
+					"name" : "F[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
