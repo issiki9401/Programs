@@ -3,16 +3,36 @@ error_reporting(0);
 header('Content-Type: application/json; charset=utf-8');
 date_default_timezone_set('Asia/Taipei');
 
-$DATA_FILE = 'posts.json';
-$UPLOAD_DIR = 'uploads/';
-$PASSWORD = '11411133';
+// 允許 GitHub Pages 跨網域請求 (請將此網址替換為你的 GitHub Pages 實際網址，結尾不要加斜線)
+header('Access-Control-Allow-Origin: https://issiki9401.github.io');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
 
-$action = $_GET['action'] ?? '';
-
-if (!file_exists($DATA_FILE)) {
-    file_put_contents($DATA_FILE, json_encode([]));
+// 如果是預檢請求 (OPTIONS)，直接結束連線
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    exit(0);
 }
 
+// 資料庫連線設定
+$DB_HOST = 'localhost';
+$DB_NAME = 'd50';
+$DB_USER = 'd50'; // 🔴 請修改此處
+$DB_PASS = '0968578863'; // 🔴 請修改此處
+
+try {
+    $pdo = new PDO("mysql:host=$DB_HOST;dbname=$DB_NAME;charset=utf8mb4", $DB_USER, $DB_PASS, [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    ]);
+} catch (PDOException $e) {
+    echo json_encode(['success' => false, 'message' => '資料庫連線失敗']);
+    exit;
+}
+
+$UPLOAD_DIR = 'uploads/';
+$action = $_GET['action'] ?? '';
+
+// 圖片上傳功能
 if ($action === 'upload') {
     if (!is_dir($UPLOAD_DIR)) {
         if (!@mkdir($UPLOAD_DIR, 0777, true)) {
@@ -21,9 +41,13 @@ if ($action === 'upload') {
     }
     if (isset($_FILES['file']) && $_FILES['file']['error'] === UPLOAD_ERR_OK) {
         $ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
-        $target = $UPLOAD_DIR . uniqid() . '.' . $ext;
+        $filename = uniqid() . '.' . $ext;
+        $target = $UPLOAD_DIR . $filename;
         if (move_uploaded_file($_FILES['file']['tmp_name'], $target)) {
-            echo json_encode(['success' => true, 'url' => $target]); exit;
+            // 回傳包含學校伺服器完整路徑的網址，確保 GitHub Pages 能正常顯示圖片
+            $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
+            $fullUrl = $protocol . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']) . '/' . $target;
+            echo json_encode(['success' => true, 'url' => $fullUrl]); exit;
         }
     }
     echo json_encode(['success' => false, 'message' => '上傳失敗']); exit;
@@ -31,40 +55,48 @@ if ($action === 'upload') {
 
 $input = json_decode(file_get_contents('php://input'), true);
 
+// 登入驗證功能 (查詢資料庫)
 if ($action === 'login') {
-    if (($input['password'] ?? '') === $PASSWORD) { echo json_encode(['success' => true]); } 
-    else { http_response_code(401); echo json_encode(['success' => false]); }
+    $password = $input['password'] ?? '';
+    // 預設帳號為 admin
+    $stmt = $pdo->prepare("SELECT * FROM admin_users WHERE username = 'admin' AND password = ?");
+    $stmt->execute([$password]);
+    if ($stmt->fetch()) {
+        echo json_encode(['success' => true]);
+    } else {
+        http_response_code(401);
+        echo json_encode(['success' => false, 'message' => '密碼錯誤']);
+    }
     exit;
 }
 
+// 獲取文章列表 (依時間倒序)
 if ($action === 'get_posts') {
-    echo file_get_contents($DATA_FILE); exit;
+    $stmt = $pdo->query("SELECT * FROM posts ORDER BY id DESC");
+    $posts = $stmt->fetchAll();
+    echo json_encode($posts); exit;
 }
 
+// 新增文章
 if ($action === 'add_post') {
-    $posts = json_decode(file_get_contents($DATA_FILE), true);
-    if (!is_array($posts)) $posts = [];
-    array_unshift($posts, [
-        'id' => time(),
-        'title' => $input['title'] ?? '',
-        'cover' => $input['cover'] ?? '',
-        'content' => $input['content'] ?? '',
-        'date' => date('Y/m/d')
-    ]);
-    file_put_contents($DATA_FILE, json_encode($posts, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-    echo json_encode(['success' => true]); exit;
+    $title = $input['title'] ?? '';
+    $cover = $input['cover'] ?? '';
+    $content = $input['content'] ?? '';
+    $date = date('Y/m/d');
+
+    $stmt = $pdo->prepare("INSERT INTO posts (title, cover, content, date) VALUES (?, ?, ?, ?)");
+    $success = $stmt->execute([$title, $cover, $content, $date]);
+    
+    echo json_encode(['success' => $success]); exit;
 }
 
-// 新增：刪除文章功能
+// 刪除文章
 if ($action === 'delete_post') {
     $deleteId = $input['id'] ?? '';
-    $posts = json_decode(file_get_contents($DATA_FILE), true);
-    if (!is_array($posts)) $posts = [];
-    $posts = array_filter($posts, function($p) use ($deleteId) {
-        return (string)$p['id'] !== (string)$deleteId;
-    });
-    file_put_contents($DATA_FILE, json_encode(array_values($posts), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-    echo json_encode(['success' => true]); exit;
+    $stmt = $pdo->prepare("DELETE FROM posts WHERE id = ?");
+    $success = $stmt->execute([$deleteId]);
+    
+    echo json_encode(['success' => $success]); exit;
 }
 
 echo json_encode(['success' => false]);

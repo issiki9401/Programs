@@ -1,3 +1,8 @@
+// 自動判斷 API 網址：如果在 GitHub Pages 就用絕對路徑，否則用相對路徑
+const API_BASE = window.location.hostname.includes('github.io') 
+    ? 'https://web.nttu.edu.tw/~c50/api.php' 
+    : 'api.php';
+
 // ====== 狀態更新邏輯 (分離縮小背景與浮動播放器) ======
 function updatePlayerState() {
     const hash = window.location.hash;
@@ -253,7 +258,7 @@ if (loginBtn) {
     loginBtn.addEventListener('click', async () => {
         const pwd = pwdInput.value;
         try {
-            const res = await fetch('api.php?action=login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: pwd }) });
+            const res = await fetch(`${API_BASE}?action=login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: pwd }) });
             if (res.ok) { localStorage.setItem('isAdmin', 'true'); window.location.href = 'editor.html'; } 
             else { alert('密碼錯誤！'); pwdInput.value = ''; }
         } catch (e) { alert('伺服器連線異常。'); }
@@ -273,7 +278,7 @@ async function loadBlogPosts() {
     const container = document.getElementById('blog-container');
     if (!container) return;
     try {
-        const res = await fetch('api.php?action=get_posts');
+        const res = await fetch(`${API_BASE}?action=get_posts`);
         const text = await res.text();
         try { allPosts = JSON.parse(text); } catch (e) { return; }
         if (allPosts.length === 0) return;
@@ -321,7 +326,7 @@ async function loadPostDetail(postId) {
     const container = document.getElementById('post-detail-container');
     container.innerHTML = '<div style="text-align: center; opacity: 0.7;">文章載入中...</div>';
     try {
-        const res = await fetch('api.php?action=get_posts');
+        const res = await fetch(`${API_BASE}?action=get_posts`);
         const posts = await res.json();
         const post = posts.find(p => p.id.toString() === postId);
         if (post) {
