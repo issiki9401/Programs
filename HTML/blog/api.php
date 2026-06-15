@@ -3,21 +3,20 @@ error_reporting(0);
 header('Content-Type: application/json; charset=utf-8');
 date_default_timezone_set('Asia/Taipei');
 
-// 允許 GitHub Pages 跨網域請求 (請將此網址替換為你的 GitHub Pages 實際網址，結尾不要加斜線)
+// 允許 GitHub Pages 跨網域請求
 header('Access-Control-Allow-Origin: https://issiki9401.github.io');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 
-// 如果是預檢請求 (OPTIONS)，直接結束連線
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit(0);
 }
 
-// 資料庫連線設定
-$DB_HOST = 'localhost';
+// 資料庫連線設定 (指向學校獨立資料庫主機)
+$DB_HOST = 'webdb.nttu.edu.tw';
 $DB_NAME = 'd50';
-$DB_USER = 'd50'; // 🔴 請修改此處
-$DB_PASS = '0968578863'; // 🔴 請修改此處
+$DB_USER = 'd50'; 
+$DB_PASS = '0968578863'; 
 
 try {
     $pdo = new PDO("mysql:host=$DB_HOST;dbname=$DB_NAME;charset=utf8mb4", $DB_USER, $DB_PASS, [
@@ -25,7 +24,7 @@ try {
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ]);
 } catch (PDOException $e) {
-    echo json_encode(['success' => false, 'message' => '資料庫連線失敗']);
+    echo json_encode(['success' => false, 'message' => '資料庫連線失敗: ' . $e->getMessage()]);
     exit;
 }
 
@@ -44,7 +43,6 @@ if ($action === 'upload') {
         $filename = uniqid() . '.' . $ext;
         $target = $UPLOAD_DIR . $filename;
         if (move_uploaded_file($_FILES['file']['tmp_name'], $target)) {
-            // 回傳包含學校伺服器完整路徑的網址，確保 GitHub Pages 能正常顯示圖片
             $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
             $fullUrl = $protocol . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']) . '/' . $target;
             echo json_encode(['success' => true, 'url' => $fullUrl]); exit;
@@ -55,10 +53,9 @@ if ($action === 'upload') {
 
 $input = json_decode(file_get_contents('php://input'), true);
 
-// 登入驗證功能 (查詢資料庫)
+// 登入驗證功能
 if ($action === 'login') {
     $password = $input['password'] ?? '';
-    // 預設帳號為 admin
     $stmt = $pdo->prepare("SELECT * FROM admin_users WHERE username = 'admin' AND password = ?");
     $stmt->execute([$password]);
     if ($stmt->fetch()) {
@@ -70,7 +67,7 @@ if ($action === 'login') {
     exit;
 }
 
-// 獲取文章列表 (依時間倒序)
+// 獲取文章列表
 if ($action === 'get_posts') {
     $stmt = $pdo->query("SELECT * FROM posts ORDER BY id DESC");
     $posts = $stmt->fetchAll();
