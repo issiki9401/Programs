@@ -18,7 +18,7 @@
     </script>
 </head>
 <body>
-    <a href="index.htm">首頁哈哈</a>
+    <a href="index.php">首頁哈哈</a>
     <h1>表單多選</h1>
 
     <form action="form_multiple2.php" method="post">

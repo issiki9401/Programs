@@ -5,9 +5,9 @@ include_once("01_conn.php");
 
 try{
     $sql = 'create table visitor (
-            vid int auto_increment primary key,
-			visitor int
-            )';
+        vid int auto_increment primary key,
+        counter int default 0
+        )';
 //echo $sql."<br>\n";
 $msg='';
 

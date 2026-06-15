@@ -31,6 +31,6 @@
     ?>
 	
     <a href="javascript:history.back()">回上一頁重選</a><br>
-	<a href="index.htm">回首頁uwu</a>
+	<a href="index.php">回首頁uwu</a>
 </body>
 </html>
