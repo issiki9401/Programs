@@ -1,0 +1,4 @@
+#Thu Nov 12 19:58:14 CST 2026
+base.0=C\:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\midterm\\InterconnectAndroid\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

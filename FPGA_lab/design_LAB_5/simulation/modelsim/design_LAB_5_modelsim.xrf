@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/1/Documents/Github/Programs/FPGA_lab/design_LAB_5/design_LAB_5.bdf
+source_file = 1, C:/Users/1/Documents/Github/Programs/FPGA_lab/design_LAB_5/Waveform.vwf
+source_file = 1, C:/Users/1/Documents/Github/Programs/FPGA_lab/design_LAB_5/db/design_LAB_5.cbx.xml
+source_file = 1, d:/softwares/altera/13.0sp1/quartus/libraries/others/maxplus2/74138.bdf
+design_name = design_LAB_5
+instance = comp, \y~I , y, design_LAB_5, 1
+instance = comp, \z~I , z, design_LAB_5, 1
+instance = comp, \x~I , x, design_LAB_5, 1
+instance = comp, \inst~0 , inst~0, design_LAB_5, 1
+instance = comp, \F~I , F, design_LAB_5, 1

@@ -1,0 +1,17 @@
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\blockgame.Form1.resources
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\blockgame.csproj.GenerateResource.cache
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\blockgame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\blockgame.AssemblyInfoInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\blockgame.AssemblyInfo.cs
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\blockgame.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\blockgame.sourcelink.json
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\bin\Debug\net8.0-windows\blockgame.exe
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\bin\Debug\net8.0-windows\blockgame.deps.json
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\bin\Debug\net8.0-windows\blockgame.runtimeconfig.json
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\bin\Debug\net8.0-windows\blockgame.dll
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\bin\Debug\net8.0-windows\blockgame.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\blockgame.dll
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\refint\blockgame.dll
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\blockgame.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\blockgame.genruntimeconfig.cache
+C:\Users\1\Documents\Github\Programs\windows programming\blockgame\obj\Debug\net8.0-windows\ref\blockgame.dll

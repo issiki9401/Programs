@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "0WUpzNWkBSY=",
+  "success": true,
+  "projectFilePath": "c:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\Midterm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\1\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.32\\microsoft.net.illink.tasks.8.0.32.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\8.0.32\\microsoft.netcore.app.runtime.win-arm64.8.0.32.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\8.0.32\\microsoft.windowsdesktop.app.runtime.win-arm64.8.0.32.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\8.0.32\\microsoft.aspnetcore.app.runtime.win-arm64.8.0.32.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
+  "logs": []
+}

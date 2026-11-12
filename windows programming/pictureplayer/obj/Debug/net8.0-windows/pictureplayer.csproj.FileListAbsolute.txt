@@ -1,0 +1,17 @@
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\bin\Debug\net8.0-windows\pictureplayer.exe
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\bin\Debug\net8.0-windows\pictureplayer.deps.json
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\bin\Debug\net8.0-windows\pictureplayer.runtimeconfig.json
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\bin\Debug\net8.0-windows\pictureplayer.dll
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\bin\Debug\net8.0-windows\pictureplayer.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\pictureplayer.Form1.resources
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\pictureplayer.csproj.GenerateResource.cache
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\pictureplayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\pictureplayer.AssemblyInfoInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\pictureplayer.AssemblyInfo.cs
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\pictureplayer.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\pictureplayer.sourcelink.json
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\pictureplayer.dll
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\refint\pictureplayer.dll
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\pictureplayer.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\pictureplayer.genruntimeconfig.cache
+C:\Users\1\Documents\Github\Programs\windows programming\pictureplayer\obj\Debug\net8.0-windows\ref\pictureplayer.dll

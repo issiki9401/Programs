@@ -1,0 +1,26 @@
+|design_LAB_4
+Cout <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => half_adder:inst5.A
+B => half_adder:inst5.B
+Cin => half_adder:inst6.B
+Sum <= half_adder:inst6.S
+
+
+|design_LAB_4|half_adder:inst6
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|design_LAB_4|half_adder:inst5
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+

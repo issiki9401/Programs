@@ -1,0 +1,52 @@
+{
+  "buildFiles": [
+    "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\src\\main\\cpp\\opus\\cmake\\CFeatureCheck.cmake",
+    "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\src\\main\\cpp\\opus\\cmake\\config.h.cmake.in",
+    "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\src\\main\\cpp\\opus\\cmake\\OpusBuildtype.cmake",
+    "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\src\\main\\cpp\\opus\\cmake\\OpusConfig.cmake",
+    "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\src\\main\\cpp\\opus\\cmake\\OpusFunctions.cmake",
+    "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\src\\main\\cpp\\opus\\cmake\\OpusPackageVersion.cmake",
+    "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\src\\main\\cpp\\opus\\cmake\\OpusSources.cmake",
+    "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\src\\main\\cpp\\opus\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\1\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\.cxx\\RelWithDebInfo\\5e646a2j\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\1\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\.cxx\\RelWithDebInfo\\5e646a2j\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "interconnect_native::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "interconnect_native",
+      "output": "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\5e646a2j\\obj\\x86\\libinterconnect_native.so",
+      "runtimeFiles": []
+    },
+    "opus::@27c8c1d919c410202cbb": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "opus",
+      "output": "C:\\Users\\1\\Documents\\Github\\Programs\\windows programming\\Midterm\\InterconnectAndroid\\app\\.cxx\\RelWithDebInfo\\5e646a2j\\x86\\opus\\libopus.a"
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "C:\\Users\\1\\AppData\\Local\\Android\\Sdk\\ndk\\27.2.12479018\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\1\\AppData\\Local\\Android\\Sdk\\ndk\\27.2.12479018\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

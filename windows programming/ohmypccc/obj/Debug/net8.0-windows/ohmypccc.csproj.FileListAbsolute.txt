@@ -1,0 +1,17 @@
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\bin\Debug\net8.0-windows\ohmypccc.exe
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\bin\Debug\net8.0-windows\ohmypccc.deps.json
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\bin\Debug\net8.0-windows\ohmypccc.runtimeconfig.json
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\bin\Debug\net8.0-windows\ohmypccc.dll
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\bin\Debug\net8.0-windows\ohmypccc.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ohmypccc.Form1.resources
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ohmypccc.csproj.GenerateResource.cache
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ohmypccc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ohmypccc.AssemblyInfoInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ohmypccc.AssemblyInfo.cs
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ohmypccc.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ohmypccc.sourcelink.json
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ohmypccc.dll
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\refint\ohmypccc.dll
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ohmypccc.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ohmypccc.genruntimeconfig.cache
+C:\Users\1\Documents\Github\Programs\windows programming\ohmypccc\obj\Debug\net8.0-windows\ref\ohmypccc.dll

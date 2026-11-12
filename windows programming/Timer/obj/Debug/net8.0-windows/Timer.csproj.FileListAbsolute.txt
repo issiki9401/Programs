@@ -1,0 +1,17 @@
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\bin\Debug\net8.0-windows\Timer.exe
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\bin\Debug\net8.0-windows\Timer.deps.json
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\bin\Debug\net8.0-windows\Timer.runtimeconfig.json
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\bin\Debug\net8.0-windows\Timer.dll
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\bin\Debug\net8.0-windows\Timer.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\Timer.Form1.resources
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\Timer.csproj.GenerateResource.cache
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\Timer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\Timer.AssemblyInfoInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\Timer.AssemblyInfo.cs
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\Timer.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\Timer.sourcelink.json
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\Timer.dll
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\refint\Timer.dll
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\Timer.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\Timer.genruntimeconfig.cache
+C:\Users\1\Documents\Github\Programs\windows programming\Timer\obj\Debug\net8.0-windows\ref\Timer.dll

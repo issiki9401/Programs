@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37806.7 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "remove_background", "remove_background.csproj", "{59C08E9B-514C-4A0C-91D7-6B92E8EEFDBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59C08E9B-514C-4A0C-91D7-6B92E8EEFDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C08E9B-514C-4A0C-91D7-6B92E8EEFDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C08E9B-514C-4A0C-91D7-6B92E8EEFDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C08E9B-514C-4A0C-91D7-6B92E8EEFDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0695F620-7B27-4CDE-96F6-7F107081B80F}
+	EndGlobalSection
+EndGlobal

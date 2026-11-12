@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\1\Documents\Github\Programs\FPGA_lab\design_LAB_4\simulation\qsim
+vBlock2
+Z1 I46[zOJ<3Ed@MOa:@4>BcK0
+Z2 VR[TN5S]2_`Ch9==3ESl<32
+Z3 dC:\Users\1\Documents\Github\Programs\FPGA_lab\design_LAB_4\simulation\qsim
+Z4 w1792485376
+Z5 8design_LAB_4.vo
+Z6 Fdesign_LAB_4.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|design_LAB_4.vo|
+Z9 o-work work -O0
+Z10 n@block2
+Z11 !s100 PCeLGKTPU_gR9<I6`<3M20
+Z12 !s108 1792485377.874000
+Z13 !s107 design_LAB_4.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vBlock2_vlg_check_tst
+Z14 I5zW96_je2D6L968cfLFT72
+Z15 V04^<`4WQVaCZV]aVPZZm_2
+R3
+R4
+Z16 8design_LAB_4.vt
+Z17 Fdesign_LAB_4.vt
+L0 69
+R7
+r1
+31
+Z18 !s108 1792485377.988000
+Z19 !s107 design_LAB_4.vt|
+Z20 !s90 -work|work|design_LAB_4.vt|
+R9
+Z21 n@block2_vlg_check_tst
+Z22 !s100 h0me40<U8IFk`TaM_NFC^2
+!i10b 1
+!s85 0
+!s101 -O0
+vBlock2_vlg_sample_tst
+Z23 IFKPIM0J2dSH_ANMYTPFh>3
+Z24 V2>P><I]2o8eZToCY7?1Sg3
+R3
+R4
+R16
+R17
+L0 29
+R7
+r1
+31
+R18
+R19
+R20
+R9
+Z25 n@block2_vlg_sample_tst
+Z26 !s100 [UKJS:PSJ_@19dg5<4>X41
+!i10b 1
+!s85 0
+!s101 -O0
+vBlock2_vlg_vec_tst
+Z27 Ic0m36bUOAbF0X0KFLjnSP0
+Z28 VniRYiKO^Dm>FO`M@4a0Mg1
+R3
+R4
+R16
+R17
+Z29 L0 245
+R7
+r1
+31
+R18
+R19
+R20
+R9
+Z30 n@block2_vlg_vec_tst
+Z31 !s100 dDCDn:f@9VTAk477R1G:S1
+!i10b 1
+!s85 0
+!s101 -O0
+vdesign_LAB_4
+Z32 !s100 >1Rn^T2J?VI@GSf[C0]2L3
+Z33 IK;X;W0Ki?Y9S^OXeA8okO1
+Z34 VZZ;S>cVn`K7CE0ZA>5S5J3
+R3
+Z35 w1792568633
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z36 ndesign_@l@a@b_4
+!i10b 1
+!s85 0
+Z37 !s108 1792568636.624000
+R13
+!s101 -O0
+vdesign_LAB_4_vlg_check_tst
+!i10b 1
+Z38 !s100 8cLOUSPA7WKZ[b8@CT]2X2
+Z39 ILONJ1V6JDiO@87H0=[]E<1
+Z40 Val7QVond:klUTLY5MzjL;1
+R3
+Z41 w1792568632
+R16
+R17
+L0 61
+R7
+r1
+!s85 0
+31
+Z42 !s108 1792568636.773000
+Z43 !s107 design_LAB_4.vt|
+R20
+!s101 -O0
+R9
+Z44 ndesign_@l@a@b_4_vlg_check_tst
+vdesign_LAB_4_vlg_sample_tst
+!i10b 1
+Z45 !s100 FUzBPeYW5ak[@?O<EAj0`2
+Z46 I:Ybo1:_P;mWVFXK0zc[^F2
+Z47 VZ?=?O0cIkCIHoe=Ila9583
+R3
+R41
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R42
+R43
+R20
+!s101 -O0
+R9
+Z48 ndesign_@l@a@b_4_vlg_sample_tst
+vdesign_LAB_4_vlg_vec_tst
+!i10b 1
+!s100 Q3K<7Vk=n>5TfeHL8?lli2
+I[Nl]Eo4NeKAGlW9L>ZnRG1
+Z49 VQBeWG6J8l1[CETk];NJG73
+R3
+R41
+R16
+R17
+Z50 L0 183
+R7
+r1
+!s85 0
+31
+R42
+R43
+R20
+!s101 -O0
+R9
+Z51 ndesign_@l@a@b_4_vlg_vec_tst

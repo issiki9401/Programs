@@ -1,0 +1,14 @@
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/CMakeFiles/interconnect_native.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/CMakeFiles/list_install_components.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/CMakeFiles/install.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/CMakeFiles/install/local.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/CMakeFiles/install/strip.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/opus/CMakeFiles/opus.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/opus/CMakeFiles/edit_cache.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/opus/CMakeFiles/rebuild_cache.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/opus/CMakeFiles/list_install_components.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/opus/CMakeFiles/install.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/opus/CMakeFiles/install/local.dir
+C:/Users/1/Documents/Github/Programs/windows programming/Midterm/InterconnectAndroid/app/.cxx/RelWithDebInfo/5e646a2j/armeabi-v7a/opus/CMakeFiles/install/strip.dir

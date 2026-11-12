@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\1\Documents\Github\Programs\windows programming\Midterm\InterconnectAndroid\app\.cxx\RelWithDebInfo\5e646a2j\arm64-v8a'
+ninja: no work to do.

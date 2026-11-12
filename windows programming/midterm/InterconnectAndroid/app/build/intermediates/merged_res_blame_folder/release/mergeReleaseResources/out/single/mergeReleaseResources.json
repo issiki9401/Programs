@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.interconnect.app-release-11:/drawable_ic_launcher.xml.flat",
+        "source": "com.interconnect.app-main-12:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.interconnect.app-release-11:/drawable_ic_notif.xml.flat",
+        "source": "com.interconnect.app-main-12:/drawable/ic_notif.xml"
+    }
+]

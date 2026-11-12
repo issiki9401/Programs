@@ -1,0 +1,17 @@
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\bin\Debug\net8.0-windows\mirrorball.exe
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\bin\Debug\net8.0-windows\mirrorball.deps.json
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\bin\Debug\net8.0-windows\mirrorball.runtimeconfig.json
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\bin\Debug\net8.0-windows\mirrorball.dll
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\bin\Debug\net8.0-windows\mirrorball.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\mirrorball.Form1.resources
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\mirrorball.csproj.GenerateResource.cache
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\mirrorball.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\mirrorball.AssemblyInfoInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\mirrorball.AssemblyInfo.cs
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\mirrorball.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\mirrorball.sourcelink.json
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\mirrorball.dll
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\refint\mirrorball.dll
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\mirrorball.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\mirrorball.genruntimeconfig.cache
+C:\Users\1\Documents\Github\Programs\windows programming\mirrorball\obj\Debug\net8.0-windows\ref\mirrorball.dll

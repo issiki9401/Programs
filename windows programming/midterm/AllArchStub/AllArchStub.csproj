@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AssemblyName>Interconnect-all-arch</AssemblyName>
+    <RootNamespace>InterconnectStub</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableSourceLink>false</EnableSourceLink>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <ResDir Condition="'$(ResDir)' == ''">res</ResDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildProjectDirectory)\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(ResDir)\Interconnect-x64.exe.gz" LogicalName="x64" />
+    <EmbeddedResource Include="$(ResDir)\Interconnect-x86.exe.gz" LogicalName="x86" />
+    <EmbeddedResource Include="$(ResDir)\Interconnect-arm64.exe.gz" LogicalName="arm64" />
+  </ItemGroup>
+</Project>

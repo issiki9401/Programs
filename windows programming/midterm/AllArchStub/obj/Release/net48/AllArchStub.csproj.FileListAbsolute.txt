@@ -1,0 +1,11 @@
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\obj\Release\net48\AllArchStub.csproj.AssemblyReference.cache
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\obj\Release\net48\AllArchStub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\obj\Release\net48\AllArchStub.AssemblyInfoInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\obj\Release\net48\AllArchStub.AssemblyInfo.cs
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\obj\Release\net48\AllArchStub.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\bin\Release\net48\Interconnect-all-arch.exe.config
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\bin\Release\net48\Interconnect-all-arch.exe
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\bin\Release\net48\Interconnect-all-arch.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\obj\Release\net48\Interconnect-all-arch.exe
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\obj\Release\net48\Interconnect-all-arch.pdb
+C:\Users\1\Documents\Github\Programs\windows programming\Midterm\AllArchStub\obj\Release\net48\Interconnect-all-arch.exe.config

@@ -1,0 +1,2 @@
+c:\Users\1\Documents\Github\Programs\windows programming\Midterm\bin\pub-x64\Interconnect.pdb
+c:\Users\1\Documents\Github\Programs\windows programming\Midterm\bin\pub-x64\Interconnect.exe
